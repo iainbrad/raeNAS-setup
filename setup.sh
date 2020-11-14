@@ -33,10 +33,10 @@ docker-compose stop
 cd ~
 unzip ~/plex-server/configs.zip
 rm ~/plex-server/configs.zip
-cp -r ~/jackett_config/_data/ /var/lib/docker/volumes/plex-server_jackett_data/_data/
-cp -r ~/radarr_config/_data/ /var/lib/docker/volumes/plex-server_radarr_data/_data/
-rm -r ~/jackett_config/
-rm -r ~/radarr_config/
+cp -r ~/plex-server_jackett/_data/ /var/lib/docker/volumes/plex-server_jackett_data/_data/
+cp -r ~/plex-server_radarr_data/_data/ /var/lib/docker/volumes/plex-server_radarr_data/_data/
+rm -r ~/plex-server_radarr_data/
+rm -r ~/plex-server_jackett_data/
 
 # setup cron task to refresh all of Plex stack every Wednesday at midnight
 crontab -l 2>/dev/null; echo "0 0 * * 3 ~/plex-server/plex-update.sh > /dev/null" | crontab -
