@@ -38,7 +38,7 @@ docker-compose stop
 cd ~
 unzip ~/plex-server/configs.zip
 rm ~/plex-server/configs.zip
-cp -r ~/plex-server_jackett/_data/. /var/lib/docker/volumes/plex-server_jackett_data/_data
+cp -r ~/plex-server_jackett_data/_data/. /var/lib/docker/volumes/plex-server_jackett_data/_data
 cp -r ~/plex-server_radarr_data/_data/. /var/lib/docker/volumes/plex-server_radarr_data/_data
 rm -r ~/plex-server_radarr_data/
 rm -r ~/plex-server_jackett_data/
