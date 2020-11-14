@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# install additional packages needed and perform full upgrade of all other packages
+# install additional packages needed
 echo Installing packages necessary for all installations...
 apt install unzip -y && apt clean
 
