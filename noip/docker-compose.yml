@@ -1,0 +1,15 @@
+version:                "3"
+services:
+  no-ip:
+      image: coppit/no-ip
+      volumes:
+        - /etc/localtime:/etc/localtime
+        - ./:/config
+      environment:
+        - USERNAME=noip@pwmnet.co.uk
+        - PASSWORD=euannoip
+        - DOMAINS=raenas.hopto.org
+        - INTERVAL=1d
+
+      container_name:  no-ip
+      restart: unless-stopped
