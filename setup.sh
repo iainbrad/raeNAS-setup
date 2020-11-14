@@ -2,7 +2,7 @@
 
 # install additional packages needed and perform full upgrade of all other packages
 echo Installing packages necessary for all installations...
-apt install zip unzip -y && apt clean
+apt install unzip -y && apt clean
 
 # remove portainer
 docker stop portainer
