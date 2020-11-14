@@ -23,3 +23,5 @@ sed -i "s/PLEXCLAIM/$claimcode/g" docker-compose.yml
 
 # start plex stack
 docker-compose up -d
+
+cd
