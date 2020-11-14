@@ -48,4 +48,4 @@ crontab -l 2>/dev/null; echo "0 0 * * 3 ~/plex-server/plex-update.sh > /dev/null
 
 # start script to claim Plex server
 cd ~/plex-server
-# ./plex-claim.sh
+./plex-claim.sh
