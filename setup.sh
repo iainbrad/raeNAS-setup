@@ -4,6 +4,11 @@
 echo Installing packages necessary for all installations...
 apt install zip unzip -y && apt clean
 
+# remove portainer
+docker stop portainer
+docker rm portainer
+docker rmi portainer/portainer-ce
+
 # tidy directory
 rm README.md
 rm ~/*.deb
